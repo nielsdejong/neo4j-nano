@@ -49,10 +49,7 @@ DataFrames are loaded into H2 in-memory, Neo4j Virtual Graphs maps them as a gra
 - Accept Neo4j Enterprise Edition license
 
 ## Install & Run
-
-```bash
-pip install neo4j-nano
-```
+See `demo.ipynb`.
 
 On first run, Neo4j jars are downloaded and cached at `~/.cache/neo4j-nano/`.
 After this, it should take ±3 seconds to start up.
