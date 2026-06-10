@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "neo4j-nano"
+version = "0.2.0"
+description = "DataFrames in, Cypher out. Embeds Neo4j directly in Python — no Docker, no server."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [{ name = "Niels de Jong" }]
+keywords = ["neo4j", "graph", "cypher", "embedded", "dataframe"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Topic :: Database",
+]
+dependencies = [
+    "jpype1>=1.5",
+]
+
+[project.optional-dependencies]
+pandas = ["pandas>=1.5"]
+polars = ["polars>=0.19"]
+dev = ["pytest>=7.0", "pandas>=1.5"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/neo4j_nano"]
