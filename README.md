@@ -1,4 +1,4 @@
-# `neo4j-nano`: In-process Virtual Graph Engine 
+# `neo4j-nano`: Embedded Virtual Graph Engine 
 DataFrames in, Cypher out. [Neo4j Virtual Graphs](https://neo4j.com/docs/virtual-graph/) embedded directly in Python.
 
 ```python
